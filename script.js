@@ -69,3 +69,8 @@ async function handleScrape(config) {
         { url: 'https://sparkling-sunset-e7d3.henrygreen311.workers.dev/api/tomorrow_analysis.txt', type: 'text/plain', downloadId: 'tomorrowAnalysisTxtDownload', viewId: 'viewTomorrowAnalysisTxt' }
       ]
     }));
+    AOS.init({
+    duration: 1000,
+    once: true
+  });
+  document.getElementById("year").textContent = new Date().getFullYear();
